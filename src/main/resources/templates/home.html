@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aquilae</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+    body {
+      margin-left: 0;
+      margin-top: 0;
+      font-family: "Sedan SC", serif;
+      background-color: #2F4F4F;
+      color: white;
+    }
+    #logo {
+      position: absolute;
+      top: 3vh;
+      left: 17vh;
+      width: 208px;
+      text-align: center;
+      font-size: 45px;
+      font-weight: normal;
+    }
+    #searchButton {
+      position: absolute;
+      top:4vh;
+      left: 28vw;
+      background-color: white;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: white;
+    }
+    #searchbar {
+      position: absolute;
+      top: 4vh;
+      left: 30vw;
+      margin-top: 0;
+      height: 34px;
+      border-radius: 17px;
+      padding-left: 8px;
+      color: #2F4F4F;
+      font-size: 20px;
+      font-family: "Sedan SC", serif;
+      margin-left: 5px;
+      width: 35%;
+      border: 0;
+    }
+    #acc {
+      left: 80vw;
+      top: -40px;
+      position: absolute;
+      border-radius: 23px;
+      height: 15vh;
+      width: 211px;
+      background-color: white;
+      color: #2F4F4F;
+    }
+    #subheader {
+      display: grid;
+      grid-template-columns: 150px 55px 500px 210px;
+      margin-top: 0;
+      margin-left: 0;
+      width: 100%;
+      height: 12vh;
+    }
+    header {
+      width: 100vw;
+      height: 19vh;
+    }
+    ul {
+      position: static;
+      margin-left: 14vw;
+      margin-top: 0;
+      height: 5vh;
+      list-style-type: none;
+    }
+    li {
+      width: 10vw;
+      text-align: center;
+      font-size: 30px;
+      display: inline-block;
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+    ::placeholder {
+      color: #2F4F4F;
+      font-family: "Sedan SC", serif;
+    }
+    nav {
+      position: relative;
+      top: 2vh;
+      height: 5vh;
+      width: 68vw;
+      border-bottom: 2px solid white;
+    }
+    #hello {
+      width: 76%;
+      height: 660px;
+      margin-left: 10%;
+      margin-top: 6vh;
+      font-family: "Sedan SC",serif;
+      font-size: 50px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      text-align: left;
+
+    }
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-family: "Sedan SC", serif;
+      font-size: 55px;
+      font-weight: 400;
+      margin-top: 0;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0;
+      font-family: "Sedan SC",serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+    #letsstart {
+      text-align: center;
+      font-family: "Sedan SC", serif;
+      color: darkred;
+      border: 0;
+      border-radius: 0;
+      width: 310px;
+      height: 70px;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    #underline {
+      margin-top: 12vh;
+      padding-top: 40px;
+      width: 100vw;
+      height: 100px;
+      text-align: center;
+      font-family: "Sedan SC",serif;
+      font-size: 70px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      border-bottom: 3px solid white;
+    }
+    #collage {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 21vw 14vw 14vw 14vw;
+      margin-top: 170px;
+      margin-left: 18vw;
+      width: 60vw;
+      height: 450px;
+      border-radius: 20px;
+    }
+    .collage-img {
+      object-fit: cover;
+      height: 450px;
+      width: 14vw;
+    }
+    #opened_photo {
+      height: 450px;
+      width: auto;
+    }
+    .collage-img-holder {
+      background-color: white;
+      display: inline-block;
+      height: 450px;
+    }
+    #delivery {
+      display: grid;
+      justify-content: space-evenly;
+      grid-template-columns: 16vw 16vw 16vw;
+      grid-template-rows: auto auto;
+      margin-top: 150px;
+      margin-left: 18vw;
+      width: 64vw;
+      border: 5px solid white;
+      border-radius: 20px;
+    }
+    .delivery-img {
+      background-color: white;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .delivery-icon {
+      margin-top: 30px;
+      margin-left: 30px;
+      height: 90px;
+      width: auto;
+    }
+    .delivery-p {
+      font-size: 18px;
+      margin-bottom: 70px;
+    }
+    .lent-white {
+      color: white;
+    }
+    .sale-p {
+      margin: 0;
+      padding-top: 10px;
+    }
+    #saleBanner {
+      border: 2px solid red;
+      margin-left: 18vw;
+      width: 64vw;
+      height: 700px;
+      border-radius: 20px;
+      background-color: white;
+      margin-bottom: 17vh;
+    }
+    #sale_sneakers {
+      object-fit: cover;
+      border-radius: 35px;
+      height: 700px;
+      width: 100%;
+    }
+    article {
+      width: 64vw;
+      margin-left: 18vw;
+      margin-bottom: 200px;
+    }
+    .article-title {
+      font-size: 38px;
+    }
+    .article-paragraph {
+      margin-top: 40px;
+      font-size: 20px;
+    }
+    .container {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(4, 15vw);
+      justify-content: space-between;
+    }
+    .position {
+      background-color: black;
+    }
+    .photoHolder {
+      object-fit: cover;
+      height: 400px;
+      background-color: white;
+    }
+    .type {
+      background-color: white;
+      color: black;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 8vw;
+      text-align: center;
+    }
+    .model {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .cost {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .buy-position-button {
+      position: relative;
+      font-family: "Sedan SC", serif;
+      top: -2vh;
+      height: 25px;
+      width: 4vw;
+      left: 10vw;
+      border-radius: 10px;
+    }
+    .red-text {
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div id="subheader">
+    <div id="logo">AQUILAE</div>
+    <button id="searchButton"></button>
+    <input id="searchbar" type="text" placeholder="search">
+    <div id="acc">Account</div>
+  </div>
+  <nav>
+    <ul>
+      <li>MAN</li>
+      <li>WOMAN</li>
+      <li>BRANDS</li>
+      <li>SPORTS</li>
+      <li>SALE</li>
+    </ul>
+  </nav>
+</header>
+
+<div id="hello">
+  <h1>
+    Get Ready for<br>
+    Success
+  </h1>
+  <h2>Explore Our Extensive<br>
+    Range of Athletic Attire!</h2>
+  <h3>"Let's start your journey to fitness and style today!<br>
+    Click below to begin."</h3>
+  <button id="letsstart">Let's start</button>
+</div>
+
+<div id="underline">AQUILAE</div>
+
+<div id="collage">
+  <div class="collage-img-holder">
+    <img id="opened_photo" src="img/summer_sneakers.jpg" alt="photo">
+  </div>
+  <div class="collage-img-holder">
+    <img class="collage-img" src="./img/orange_sneakers.jpg" alt="photo">
+  </div>
+  <div class="collage-img-holder">
+    <img class="collage-img" src="./img/red_nike.jpg" alt="photo">
+  </div>
+  <div class="collage-img-holder">
+    <img class="collage-img" src="./img/free_white.jpg" alt="photo">
+  </div>
+</div>
+
+<div id="delivery">
+  <div class="delivery-img"><img class="delivery-icon" src="icon/bus.png" alt="photo"></div>
+  <div class="delivery-img"><img class="delivery-icon" src="icon/basket.png" alt="photo"></div>
+  <div class="delivery-img"><img class="delivery-icon" src="icon/card.png" alt="photo"></div>
+  <p class="delivery-p">Next day delivery<br>
+    In Kazakhstan and 60 other major
+    cities of Kazakhstan you will receive
+    your order the very next day!<br>
+    More detailed information about
+    delivery conditions to your city can
+    be found here.</p>
+  <p class="delivery-p">Try on before purchasing<br>
+    The Ai - Brend online store gives you
+    the opportunity to try on clothes,
+    shoes and other goods before paying
+    for the order to the courier. Pay only
+    for what suits you and what you like!</p>
+  <p class="delivery-p">Convenient payment methods<br>
+    You can pay for purchases not only
+    in cash, but also with a bank card.<br>
+    All Lamoda Express couriers have a
+    terminal for card payments.</p>
+</div>
+
+<div id="sale-lent"></div>
+
+<div id="saleBanner">
+  <img id="sale_sneakers" src="img/sale_sneakers.jpg" alt="photo">
+  <p id="bannerTitle">SALE</p>
+</div>
+
+<article>
+  <div class="article-title">Performance-Driven <span class="red-text">Men's</span> Sportswear</div>
+  <div class="article-paragraph">Unleash your athletic prowess with our premium men's sports<br>
+    apparel. Designed for optimal performance and style, our<br>
+    collection features cutting-edge fabrics and sleek designs<br>
+    to keep you ahead of the game. Whether you're hitting the gym<br>
+    or dominating the field, our sportswear ensures you look<br>
+    and feel your best every step of the way.
+  </div>
+
+  <div class="container">
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">MEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">MEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">MEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">MEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+  </div>
+</article>
+
+<script>let containerHeight = '70px';
+document.addEventListener('scroll', makeSaleLent);
+function makeSaleLent() {
+
+  let container = document.getElementById('sale-lent');
+
+  for (let i = 0; i < 5; ++i) {
+    let child = document.createElement('div');
+
+    computeSaleLentContainerStyle(container);
+
+    child.style.height = containerHeight;
+    child.style.fontSize = '40px';
+    child.style.color = 'black';
+    child.style.width = '4905x';
+    child.style.display = 'inline-block';
+    child.style.textAlign = 'center';
+    child.style.margin = '0';
+    child.style.padding = '0';
+
+    child.insertAdjacentHTML('beforeend', `<p class="sale-p">
+            <span class="lent-white">* </span>
+            25%<span class="lent-white"> ENDS</span> TOMORROW</p>
+        `);
+
+    container.appendChild(child);
+  }
+  document.removeEventListener('scroll', makeSaleLent);
+}
+
+function computeSaleLentContainerStyle(container) {
+
+  container.style.position = 'relative';
+  container.style.left = '-500px';
+  container.style.marginTop = '100px';
+  container.style.marginBottom = '110px';
+  container.style.height = containerHeight;
+  container.style.width = '2700px';
+  container.style.backgroundColor = '#800000';
+}
+
+document.addEventListener('scroll', pasteSaleBannerTitle);
+window.addEventListener('change', pasteSaleBannerTitle);
+function pasteSaleBannerTitle() {
+  let container = document.getElementById('saleBanner');
+  let title = document.getElementById('bannerTitle');
+
+  title.style.fontSize = '170px';
+  title.style.position = 'relative';
+  title.style.width = `${400 + container.innerWidth * 0.05}px`;
+  title.style.top = '-550px';
+  title.style.left = '38vw';
+  title.style.transform = `translateX(${container.innerWidth - title.innerWidth}px)`;
+  title.style.transform = 'rotate(45deg)';
+  title.style.color = '#800000';
+
+  document.removeEventListener('scroll', pasteSaleBannerTitle);
+}
+
+</script>
+
+</body>
+</html>

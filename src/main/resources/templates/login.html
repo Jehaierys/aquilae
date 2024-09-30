@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Please Log In</title>
+  <style>
+    body {
+      background-color: #2F4F4F; /* Тёмно-серый фон */
+      color: white; /* Белый текст */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон формы */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      width: 300px; /* Фиксированная ширина формы */
+      text-align: center; /* Центрирование текста */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px; /* Размер заголовка */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 20px); /* Полная ширина с учётом отступов */
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон для полей */
+      color: white; /* Белый текст в полях */
+    }
+
+    button {
+      margin-top: 1vh;
+      background-color: darkred; /* Тёмно-красный фон для кнопки */
+      color: white; /* Белый текст на кнопке */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%; /* Полная ширина кнопки */
+      font-size: 16px; /* Размер текста на кнопке */
+    }
+
+    button:hover {
+      background-color: #a60000; /* Изменение цвета при наведении */
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Please Log In</h1>
+  <form action="/login" method="post">
+    <div>
+      <input type="text" name="username" placeholder="Username" required>
+    </div>
+    <div>
+      <input type="password" name="password" placeholder="Password" required>
+    </div>
+    <button type="submit">Log in</button> <!-- Используем <button> вместо <input> -->
+  </form>
+</div>
+</body>
+</html>

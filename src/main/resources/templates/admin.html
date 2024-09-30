@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+        body {
+            margin-left: 0;
+            margin-top: 0;
+            font-family: "Sedan SC", serif;
+            background-color: #2F4F4F;
+            color: white;
+        }
+        main {
+            margin-left: 18vw;
+            width: 64vw;
+        }
+        h1 {
+            font-size: 100px;
+        }
+        h2 {
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 0;
+            font-size: 70px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #2F4F4F;
+        }
+        button {
+            margin-left: 20px;
+            background-color: #2F4F4F;
+            border: 0;
+            border-radius: 25px;
+            height: 50px;
+            width: auto;
+        }
+        .button-img {
+            height: 50px;
+            width: auto;
+        }
+        footer {
+            height: 20vh;
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <h1>ADMIN PANEL</h1>
+
+    <article class="table">
+        <h2>Sneakers</h2>
+        <button>
+            <img class="button-img" src="/icon/refresh.png" alt="Refresh">
+        </button>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Модель</th>
+                <th>Размер</th>
+                <th>Количество</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nike Air Max</td>
+                <td>42</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Adidas Superstar</td>
+                <td>40</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Puma RS-X</td>
+                <td>44</td>
+                <td>8</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <article class="table">
+        <h2>Users</h2>
+        <button>
+            <img class="button-img" src="/icon/refresh.png" alt="Refresh">
+        </button>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Email</th>
+                <th>Номер телефона</th>
+                <th>Верификация Email</th>
+                <th>Верификация телефона</th>
+                <th>Роль</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Иван</td>
+                <td>Иванов</td>
+                <td>ivan@example.com</td>
+                <td>+7 123 456-78-90</td>
+                <td>Да</td>
+                <td>Нет</td>
+                <td>USER</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Мария</td>
+                <td>Петрова</td>
+                <td>maria@example.com</td>
+                <td>+7 987 654-32-10</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>ADMIN</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Алексей</td>
+                <td>Сидоров</td>
+                <td>alexey@example.com</td>
+                <td>+7 111 222-33-44</td>
+                <td>Нет</td>
+                <td>Нет</td>
+                <td>USER</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <article class="table">
+        <h2>Users</h2>
+        <button>
+            <img class="button-img" src="/icon/refresh.png" alt="Refresh">
+        </button>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Токен</th>
+                <th>Тип токена</th>
+                <th>Отозван</th>
+                <th>Истек</th>
+                <th>Пользователь ID</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</td>
+                <td>BEARER</td>
+                <td>Нет</td>
+                <td>Да</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</td>
+                <td>BEARER</td>
+                <td>Да</td>
+                <td>Нет</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</td>
+                <td>BEARER</td>
+                <td>Нет</td>
+                <td>Нет</td>
+                <td>3</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
