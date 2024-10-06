@@ -38,15 +38,15 @@ public class SecurityConfig {
         this.jwtAuthFilter = jwtAuthFilter;
     }
 
-    private static final String[] WHITE_LIST_URL = {"/api/v1/auth/**",
+    private static final String[] WHITE_LIST_URL = {
             "/hello",
             "/home",
             "/main",
+            "/icon/**",
+            "/img/**",
             "/admin",
             "/login",
-            "/register",
-            "/webjars/**",
-            "/swagger-ui.html"};
+            "/register"};
 
     @Bean
     public PasswordEncoder passwordEncoder() {
