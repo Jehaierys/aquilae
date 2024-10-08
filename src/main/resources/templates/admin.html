@@ -102,7 +102,7 @@
         <button>
             <img class="button-img" src="/icon/refresh.png" alt="Refresh">
         </button>
-        <table>
+        <table id="userTable">
             <thead>
             <tr>
                 <th>ID</th>
@@ -200,6 +200,37 @@
 <footer>
 
 </footer>
+
+<script>
+    async function fetchUsers() {
+    try {
+        const response = await fetch('localhost:8081/admin/users');
+        if (!response.ok) { throw new Error('Ошибка сети'); }
+
+        const users = await response.json();
+        populateTable(users);
+    } catch (error) {
+        console.error('Ошибка:', error);
+        document.body.innerHTML += `<p>Ошибка: ${error.message}</p>`;
+    }
+}
+
+function populateTable(users) {
+    const tableBody = document.querySelector('#userTable tbody');
+    users.forEach(user => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+                <td>${user.firstname}</td>
+                <td>${user.lastname}</td>
+                <td>${user.email}</td>
+                <td>${user.phoneNumber}</td>
+                <td>${user.role}</td>
+            `;
+        tableBody.appendChild(row);
+    });
+}
+
+</script>
 
 </body>
 </html>

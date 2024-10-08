@@ -39,6 +39,7 @@ public class SecurityConfig {
     }
 
     private static final String[] WHITE_LIST_URL = {
+            "/admin/**",
             "/hello",
             "/home",
             "/main",
