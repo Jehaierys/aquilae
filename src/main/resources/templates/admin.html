@@ -41,7 +41,7 @@
         button {
             margin-left: 20px;
             background-color: #2F4F4F;
-            border: 0;
+            border: 1px solid orangered;
             border-radius: 25px;
             height: 50px;
             width: auto;
@@ -62,10 +62,10 @@
 
     <article class="table">
         <h2>Sneakers</h2>
-        <button>
+        <button onclick="refresh('sneakers')" aria-label="Refresh sneakers data">
             <img class="button-img" src="/icon/refresh.png" alt="Refresh">
         </button>
-        <table>
+        <table id="sneakers">
             <thead>
             <tr>
                 <th>ID</th>
@@ -99,10 +99,10 @@
 
     <article class="table">
         <h2>Users</h2>
-        <button>
+        <button onclick="refresh('users')" aria-label="Refresh user data">
             <img class="button-img" src="/icon/refresh.png" alt="Refresh">
         </button>
-        <table id="userTable">
+        <table id="users">
             <thead>
             <tr>
                 <th>ID</th>
@@ -150,12 +150,13 @@
         </table>
     </article>
 
+    <!--
     <article class="table">
-        <h2>Users</h2>
-        <button>
+        <h2>JWT</h2>
+        <button onclick="refresh('jwt')">
             <img class="button-img" src="/icon/refresh.png" alt="Refresh">
         </button>
-        <table>
+        <table id="jwt">
             <thead>
             <tr>
                 <th>ID</th>
@@ -194,6 +195,7 @@
             </tbody>
         </table>
     </article>
+    -->
 
 </main>
 
@@ -202,33 +204,62 @@
 </footer>
 
 <script>
-    async function fetchUsers() {
-    try {
-        const response = await fetch('localhost:8081/admin/users');
-        if (!response.ok) { throw new Error('Ошибка сети'); }
-
-        const users = await response.json();
-        populateTable(users);
-    } catch (error) {
-        console.error('Ошибка:', error);
-        document.body.innerHTML += `<p>Ошибка: ${error.message}</p>`;
+    function clearTableById(table) {
+        let tableBody = document.getElementById(table).children[1];
+        tableBody.innerHTML = '';
     }
-}
+    async function refresh(table) {
+        clearTableById(table);
+        fetch(`http://localhost:8081/admin/${table}`)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                displayResponse(data, table);
+            })
+            .catch(error => {
+                alert('error');
+                console.error(error);
+            });
+    }
+    function displayResponse(response, table) {
+        const tableBody = document.getElementById(table).children[1];
+        response.forEach(record => {
+            const row = document.createElement('tr');
+            fillRow(record, row, table);
+            tableBody.appendChild(row);
+        });
+    }
 
-function populateTable(users) {
-    const tableBody = document.querySelector('#userTable tbody');
-    users.forEach(user => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-                <td>${user.firstname}</td>
-                <td>${user.lastname}</td>
-                <td>${user.email}</td>
-                <td>${user.phoneNumber}</td>
-                <td>${user.role}</td>
-            `;
-        tableBody.appendChild(row);
-    });
-}
+    const userColumns = ['id', 'firstname', 'lastname', 'email', 'phoneNumber', 'phoneVerified', 'emailVerified', 'role'];
+    const sneakersColumns = ['id', 'model', 'size', 'quantity'];
+    const jwtColumns = ['id', 'token', 'tokenType', 'revoked', 'expired'];
+    function fillRow(record, row, table) {
+        let cell;
+
+        switch (table) {
+            case 'users':
+                for (let i = 0; i < userColumns.length; ++i) {
+                    cell = document.createElement('td');
+                    cell.innerText = record[userColumns[i]];
+                    row.appendChild(cell);
+                }
+                break;
+            case 'sneakers':
+                for (let i = 0; i < sneakersColumns.length; ++i) {
+                    cell = document.createElement('td');
+                    cell.innerText = record[sneakersColumns[i]];
+                    row.appendChild(cell);
+                }
+                break;
+            case 'jwt':
+                for (let i = 0; i < jwtColumns.length; ++i) {
+                    cell = document.createElement('td');
+                    cell.innerText = record[jwtColumns[i]];
+                    row.appendChild(cell);
+                }
+        }
+    }
 
 </script>
 

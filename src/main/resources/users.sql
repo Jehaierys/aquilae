@@ -1,5 +1,3 @@
--- Assuming you have a table named 'users' with the appropriate columns
-
 INSERT INTO users (firstname, lastname, email, phone_number, password,
                    is_email_verified, is_phone_verified, is_enabled,
                    is_account_non_expired, is_account_non_locked,
