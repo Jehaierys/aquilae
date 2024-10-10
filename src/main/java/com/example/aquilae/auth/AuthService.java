@@ -4,15 +4,16 @@ import com.example.aquilae.jwt.Jwt;
 import com.example.aquilae.jwt.JwtRepo;
 import com.example.aquilae.jwt.JwtService;
 import com.example.aquilae.jwt.TokenType;
+import com.example.aquilae.sneakers.SneakersService;
 import com.example.aquilae.user.Role;
 import com.example.aquilae.user.User;
 import com.example.aquilae.user.UserDto;
 import com.example.aquilae.user.UserRepo;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,8 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class AuthService {
+
+    private static final Logger logger = LoggerFactory.getLogger(AuthService.class);
 
     private final String SECRET_KEY = "QDwIABsIzNdqXXzrZjJKKS4Aalobyvm5dzKGPsF85KQy";
     private final long EXPIRATION_TIME = 1000 * 60 * 60 * 24;
@@ -62,7 +65,6 @@ public class AuthService {
     public AuthResponse authenticate(String email, String password) {
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
         User user = userRepo.findByEmail(email).orElseThrow();
-
 
         String jwtToken = jwtService.generateToken(user);
         String refreshToken = jwtService.generateRefreshToken(user);

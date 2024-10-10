@@ -306,6 +306,23 @@
       text-align: center;
       background-color: white;
     }
+    #partners {
+      width: 100%;
+      text-align: center;
+      font-size: 100px;
+      margin: 0;
+    }
+    #partners-container {
+      width: 100%;
+      background-color: white;
+      height: 150px;
+      margin-top: 0;
+      margin-bottom: 200px;
+    }
+    .partners-item {
+      display: inline-block;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -528,6 +545,14 @@
 
 <div class="see-more-container"><button class="see-more-button">SEE MORE</button></div>
 
+<p id="partners">PARTNERS</p>
+<div id="partners-container">
+  <div class="partners-item"><img src="" alt="Ai. B"></div>
+  <div class="partners-item"><img src="" alt="Reebook"></div>
+  <div class="partners-item"><img src="" alt="Nike"></div>
+  <div class="partners-item"><img src="" alt="bascetball"></div>
+  <div class="partners-item"><img src="" alt="asics"></div>
+</div>
 <script>let containerHeight = '70px';
 document.addEventListener('scroll', makeSaleLent);
 function makeSaleLent() {
@@ -586,7 +611,6 @@ function pasteSaleBannerTitle() {
 
   document.removeEventListener('scroll', pasteSaleBannerTitle);
 }
-
 </script>
 
 </body>

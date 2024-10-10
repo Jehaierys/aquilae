@@ -1,6 +1,6 @@
 package com.example.aquilae.config;
 
-import org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer;
+
 import org.springframework.boot.sql.init.DatabaseInitializationMode;
 import org.springframework.boot.sql.init.DatabaseInitializationSettings;
 import org.springframework.context.annotation.Bean;
@@ -33,7 +33,7 @@ public class DataSourceConfig {
         settings.setEncoding(StandardCharsets.UTF_8);
         settings.setSeparator(System.lineSeparator());
         settings.setMode(DatabaseInitializationMode.ALWAYS);
-        settings.setDataLocations(List.of("classpath:data.sql"));
+        //settings.setDataLocations(List.of());
         settings.setSchemaLocations(List.of("classpath:schema.sql"));
         return settings;
     }

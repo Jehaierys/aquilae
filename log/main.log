@@ -214,3 +214,780 @@
 2024-10-10T12:01:19.355+05:00  INFO 15850 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.FrontGiver           : login page called
 2024-10-10T12:01:23.991+05:00  INFO 15850 --- [aquilae] [http-nio-8081-exec-9] com.example.aquilae.FrontGiver           : homepage called
 2024-10-10T12:01:24.084+05:00  INFO 15850 --- [aquilae] [http-nio-8081-exec-9] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T13:48:55.151+05:00  INFO 15850 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T13:49:25.905+05:00  INFO 25954 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 25954 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T13:49:25.906+05:00 DEBUG 25954 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T13:49:25.906+05:00  INFO 25954 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T13:49:26.261+05:00  INFO 25954 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T13:49:26.291+05:00  INFO 25954 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2024-10-10T13:49:26.534+05:00  INFO 25954 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T13:49:26.542+05:00  INFO 25954 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T13:49:26.542+05:00  INFO 25954 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T13:49:26.565+05:00  INFO 25954 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T13:49:26.565+05:00  INFO 25954 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 639 ms
+2024-10-10T13:49:26.804+05:00  INFO 25954 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T13:49:26.826+05:00  INFO 25954 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T13:49:26.840+05:00  INFO 25954 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T13:49:26.958+05:00  INFO 25954 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T13:49:27.493+05:00  INFO 25954 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T13:49:27.543+05:00  INFO 25954 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T13:49:27.660+05:00  WARN 25954 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T13:49:27.660+05:00  WARN 25954 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T13:49:27.674+05:00  INFO 25954 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T13:49:27.695+05:00 DEBUG 25954 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T13:49:27.714+05:00  WARN 25954 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T13:49:27.733+05:00  INFO 25954 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T13:49:27.734+05:00  WARN 25954 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T13:49:27.784+05:00  INFO 25954 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T13:49:27.979+05:00  INFO 25954 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T13:49:27.983+05:00  INFO 25954 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.247 seconds (process running for 2.58)
+2024-10-10T13:49:33.122+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T13:49:33.122+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T13:49:33.123+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T13:49:33.152+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T13:49:39.890+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.FrontGiver           : hello called
+2024-10-10T13:49:39.913+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T13:49:49.735+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.FrontGiver           : homepage called
+2024-10-10T13:49:49.828+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T13:50:03.443+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T13:50:03.469+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T13:50:05.696+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T13:50:05.696+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T13:50:05.769+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T13:50:05.771+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T13:50:05.771+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T13:50:05.773+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T13:50:06.823+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T13:50:06.824+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-10] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T13:52:48.083+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T13:52:48.083+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T13:53:20.662+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T13:53:20.663+05:00  INFO 25954 --- [aquilae] [http-nio-8081-exec-2] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:11:58.876+05:00  INFO 25954 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:12:58.014+05:00  INFO 30667 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 30667 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:12:58.015+05:00 DEBUG 30667 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:12:58.016+05:00  INFO 30667 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:12:58.348+05:00  INFO 30667 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:12:58.375+05:00  INFO 30667 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:12:58.602+05:00  INFO 30667 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:12:58.609+05:00  INFO 30667 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:12:58.609+05:00  INFO 30667 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:12:58.629+05:00  INFO 30667 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:12:58.629+05:00  INFO 30667 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 594 ms
+2024-10-10T14:12:58.859+05:00  INFO 30667 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:12:58.880+05:00  INFO 30667 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:12:58.892+05:00  INFO 30667 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:12:59.004+05:00  INFO 30667 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:12:59.527+05:00  INFO 30667 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:12:59.578+05:00  INFO 30667 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:12:59.701+05:00  WARN 30667 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:12:59.701+05:00  WARN 30667 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:12:59.721+05:00  INFO 30667 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:12:59.744+05:00 DEBUG 30667 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:12:59.764+05:00  WARN 30667 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:12:59.784+05:00  INFO 30667 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:12:59.784+05:00  WARN 30667 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:12:59.829+05:00  INFO 30667 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:13:00.027+05:00  INFO 30667 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:13:00.031+05:00  INFO 30667 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.186 seconds (process running for 2.497)
+2024-10-10T14:13:13.397+05:00  INFO 30667 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:13:13.397+05:00  INFO 30667 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:13:13.397+05:00  INFO 30667 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:13:13.425+05:00  INFO 30667 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:13:18.324+05:00  INFO 30667 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:13:18.358+05:00  INFO 30667 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:13:37.498+05:00  INFO 30667 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:13:38.901+05:00  INFO 31093 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 31093 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:13:38.902+05:00 DEBUG 31093 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:13:38.902+05:00  INFO 31093 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:13:39.240+05:00  INFO 31093 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:13:39.265+05:00  INFO 31093 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:13:39.479+05:00  INFO 31093 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:13:39.485+05:00  INFO 31093 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:13:39.486+05:00  INFO 31093 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:13:39.511+05:00  INFO 31093 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:13:39.511+05:00  INFO 31093 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 590 ms
+2024-10-10T14:13:39.728+05:00  INFO 31093 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:13:39.750+05:00  INFO 31093 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:13:39.762+05:00  INFO 31093 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:13:39.878+05:00  INFO 31093 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:13:40.352+05:00  INFO 31093 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:13:40.400+05:00  INFO 31093 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:13:40.547+05:00  WARN 31093 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:13:40.547+05:00  WARN 31093 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:13:40.564+05:00  INFO 31093 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:13:40.589+05:00 DEBUG 31093 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:13:40.608+05:00  WARN 31093 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:13:40.626+05:00  INFO 31093 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:13:40.627+05:00  WARN 31093 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:13:40.670+05:00  INFO 31093 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:13:40.871+05:00  INFO 31093 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:13:40.875+05:00  INFO 31093 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.162 seconds (process running for 2.457)
+2024-10-10T14:13:43.240+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:13:43.240+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:13:43.241+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:13:43.259+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:13:43.372+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:13:47.865+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:13:47.866+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:13:47.941+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:13:47.942+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:13:47.942+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:13:47.945+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:13:49.886+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:13:49.886+05:00  INFO 31093 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:14:13.397+05:00  INFO 31093 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:14:14.777+05:00  INFO 31438 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 31438 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:14:14.778+05:00 DEBUG 31438 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:14:14.778+05:00  INFO 31438 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:14:15.117+05:00  INFO 31438 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:14:15.148+05:00  INFO 31438 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:14:15.367+05:00  INFO 31438 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:14:15.374+05:00  INFO 31438 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:14:15.374+05:00  INFO 31438 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:14:15.396+05:00  INFO 31438 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:14:15.396+05:00  INFO 31438 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 598 ms
+2024-10-10T14:14:15.623+05:00  INFO 31438 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:14:15.647+05:00  INFO 31438 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:14:15.661+05:00  INFO 31438 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:14:15.787+05:00  INFO 31438 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:14:16.324+05:00  INFO 31438 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:14:16.379+05:00  INFO 31438 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:14:16.502+05:00  WARN 31438 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:14:16.502+05:00  WARN 31438 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:14:16.516+05:00  INFO 31438 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:14:16.538+05:00 DEBUG 31438 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:14:16.557+05:00  WARN 31438 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:14:16.576+05:00  INFO 31438 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:14:16.576+05:00  WARN 31438 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:14:16.615+05:00  INFO 31438 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:14:16.836+05:00  INFO 31438 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:14:16.840+05:00  INFO 31438 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.246 seconds (process running for 2.552)
+2024-10-10T14:14:21.006+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:14:21.007+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:14:21.007+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:14:21.023+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:14:21.107+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:14:23.457+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:14:23.458+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:14:24.488+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:14:24.489+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:14:36.774+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:14:36.774+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:14:36.803+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:14:36.804+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:14:36.804+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:14:36.806+05:00  INFO 31438 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:26:00.413+05:00  INFO 31438 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:26:01.871+05:00  INFO 32532 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 32532 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:26:01.872+05:00 DEBUG 32532 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:26:01.873+05:00  INFO 32532 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:26:02.194+05:00  INFO 32532 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:26:02.218+05:00  INFO 32532 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:26:02.451+05:00  INFO 32532 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:26:02.458+05:00  INFO 32532 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:26:02.458+05:00  INFO 32532 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:26:02.477+05:00  INFO 32532 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:26:02.477+05:00  INFO 32532 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
+2024-10-10T14:26:02.712+05:00  INFO 32532 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:26:02.734+05:00  INFO 32532 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:26:02.746+05:00  INFO 32532 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:26:02.862+05:00  INFO 32532 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:26:03.371+05:00  INFO 32532 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:26:03.419+05:00  INFO 32532 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:26:03.534+05:00  WARN 32532 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:26:03.534+05:00  WARN 32532 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:26:03.549+05:00  INFO 32532 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:26:03.569+05:00 DEBUG 32532 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:26:03.592+05:00  WARN 32532 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:26:03.612+05:00  INFO 32532 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:26:03.613+05:00  WARN 32532 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:26:03.653+05:00  INFO 32532 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:26:03.836+05:00  INFO 32532 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:26:03.840+05:00  INFO 32532 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.139 seconds (process running for 2.417)
+2024-10-10T14:27:01.726+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:27:01.727+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:27:01.727+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:27:01.744+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:27:01.836+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:27:27.212+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:27:27.213+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:27.286+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:27.288+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:27:27.288+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:27.290+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:29.066+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:27:29.067+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:29.093+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:29.094+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:27:29.094+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:29.097+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:32.947+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:27:32.947+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:32.976+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:32.978+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:27:32.978+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:32.980+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:37.673+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-9] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:27:37.705+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:27:38.653+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:27:38.653+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-4] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:27:47.036+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:27:47.037+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:47.063+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:27:47.064+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:27:47.064+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:27:47.066+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:33:34.218+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:33:34.218+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:37:57.727+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:37:57.727+05:00  INFO 32532 --- [aquilae] [http-nio-8081-exec-1] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:38:03.064+05:00  INFO 32532 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:38:04.456+05:00  INFO 34024 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 34024 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:38:04.457+05:00 DEBUG 34024 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:38:04.457+05:00  INFO 34024 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:38:04.777+05:00  INFO 34024 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:38:04.800+05:00  INFO 34024 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:38:05.023+05:00  INFO 34024 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:38:05.029+05:00  INFO 34024 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:38:05.029+05:00  INFO 34024 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:38:05.048+05:00  INFO 34024 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:38:05.048+05:00  INFO 34024 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 573 ms
+2024-10-10T14:38:05.303+05:00  INFO 34024 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:38:05.323+05:00  INFO 34024 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:38:05.335+05:00  INFO 34024 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:38:05.448+05:00  INFO 34024 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:38:06.006+05:00  INFO 34024 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:38:06.056+05:00  INFO 34024 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:38:06.178+05:00  WARN 34024 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:38:06.178+05:00  WARN 34024 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:38:06.192+05:00  INFO 34024 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:38:06.212+05:00 DEBUG 34024 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:38:06.237+05:00  WARN 34024 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:38:06.256+05:00  INFO 34024 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:38:06.256+05:00  WARN 34024 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:38:06.299+05:00  INFO 34024 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:38:06.495+05:00  INFO 34024 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:38:06.499+05:00  INFO 34024 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.217 seconds (process running for 2.502)
+2024-10-10T14:38:14.261+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:38:14.262+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:38:14.262+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:38:14.290+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:38:18.109+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:38:18.141+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:38:19.683+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-9] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:38:19.684+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-9] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:38:22.316+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:38:22.316+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-10] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:38:56.610+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:38:56.610+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-1] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:38:58.755+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:38:58.779+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:39:00.039+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:39:00.040+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:39:06.037+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:39:06.037+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:39:06.071+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:39:06.073+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:39:06.073+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:39:06.075+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:40:26.828+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:40:26.828+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:40:26.885+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:42:27.497+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:42:27.520+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:42:28.752+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:42:28.752+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-2] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:42:37.963+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:42:37.963+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:42:37.988+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:42:37.989+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:42:37.989+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:42:37.991+05:00  INFO 34024 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:43:27.496+05:00  INFO 34024 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:43:28.853+05:00  INFO 34950 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 34950 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:43:28.854+05:00 DEBUG 34950 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:43:28.855+05:00  INFO 34950 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:43:29.183+05:00  INFO 34950 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:43:29.210+05:00  INFO 34950 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:43:29.427+05:00  INFO 34950 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:43:29.433+05:00  INFO 34950 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:43:29.433+05:00  INFO 34950 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:43:29.452+05:00  INFO 34950 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:43:29.453+05:00  INFO 34950 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 579 ms
+2024-10-10T14:43:29.674+05:00  INFO 34950 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:43:29.696+05:00  INFO 34950 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:43:29.709+05:00  INFO 34950 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:43:29.826+05:00  INFO 34950 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:43:30.336+05:00  INFO 34950 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:43:30.383+05:00  INFO 34950 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:43:30.501+05:00  WARN 34950 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:43:30.501+05:00  WARN 34950 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:43:30.515+05:00  INFO 34950 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:43:30.543+05:00 DEBUG 34950 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:43:30.562+05:00  WARN 34950 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:43:30.581+05:00  INFO 34950 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:43:30.581+05:00  WARN 34950 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:43:30.621+05:00  INFO 34950 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:43:30.813+05:00  INFO 34950 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:43:30.818+05:00  INFO 34950 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.145 seconds (process running for 2.444)
+2024-10-10T14:43:34.110+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:43:34.110+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:43:34.111+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:43:34.128+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:43:34.212+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:43:35.327+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:43:35.327+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:43:48.917+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:43:48.918+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:43:48.948+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:43:48.950+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:43:48.950+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:43:48.953+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:43:51.263+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:43:51.263+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:43:51.288+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:43:51.290+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:43:51.290+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:43:51.292+05:00  INFO 34950 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:44:48.586+05:00  INFO 34950 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:44:49.993+05:00  INFO 35362 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 35362 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:44:49.994+05:00 DEBUG 35362 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:44:49.994+05:00  INFO 35362 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:44:50.351+05:00  INFO 35362 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:44:50.376+05:00  INFO 35362 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:44:50.609+05:00  INFO 35362 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:44:50.616+05:00  INFO 35362 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:44:50.616+05:00  INFO 35362 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:44:50.637+05:00  INFO 35362 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:44:50.638+05:00  INFO 35362 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2024-10-10T14:44:50.860+05:00  INFO 35362 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:44:50.881+05:00  INFO 35362 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:44:50.894+05:00  INFO 35362 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:44:51.014+05:00  INFO 35362 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:44:51.493+05:00  INFO 35362 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:44:51.551+05:00  INFO 35362 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:44:51.691+05:00  WARN 35362 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:44:51.691+05:00  WARN 35362 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:44:51.710+05:00  INFO 35362 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:44:51.734+05:00 DEBUG 35362 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:44:51.753+05:00  WARN 35362 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:44:51.770+05:00  INFO 35362 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:44:51.770+05:00  WARN 35362 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:44:51.810+05:00  INFO 35362 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:44:52.021+05:00  INFO 35362 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:44:52.026+05:00  INFO 35362 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.207 seconds (process running for 2.52)
+2024-10-10T14:44:56.860+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:44:56.860+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:44:56.860+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:44:56.877+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:44:56.966+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:44:58.566+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:44:58.567+05:00  INFO 35362 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:46:09.487+05:00  INFO 35362 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:46:10.769+05:00  INFO 35757 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 35757 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:46:10.770+05:00 DEBUG 35757 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:46:10.770+05:00  INFO 35757 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:46:11.093+05:00  INFO 35757 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:46:11.119+05:00  INFO 35757 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:46:11.332+05:00  INFO 35757 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:46:11.338+05:00  INFO 35757 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:46:11.339+05:00  INFO 35757 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:46:11.358+05:00  INFO 35757 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:46:11.358+05:00  INFO 35757 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 569 ms
+2024-10-10T14:46:11.577+05:00  INFO 35757 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:46:11.599+05:00  INFO 35757 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:46:11.611+05:00  INFO 35757 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:46:11.729+05:00  INFO 35757 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:46:12.236+05:00  INFO 35757 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:46:12.288+05:00  INFO 35757 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:46:12.414+05:00  WARN 35757 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:46:12.414+05:00  WARN 35757 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:46:12.429+05:00  INFO 35757 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:46:12.451+05:00 DEBUG 35757 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:46:12.471+05:00  WARN 35757 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:46:12.490+05:00  INFO 35757 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:46:12.490+05:00  WARN 35757 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:46:12.530+05:00  INFO 35757 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:46:12.722+05:00  INFO 35757 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:46:12.726+05:00  INFO 35757 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.14 seconds (process running for 2.436)
+2024-10-10T14:46:18.897+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:46:18.897+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:46:18.898+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:46:18.915+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:46:19.003+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:46:20.830+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:46:20.831+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:47:15.863+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:47:15.864+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:47:19.349+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:47:19.349+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:48:22.869+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:48:22.870+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-3] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:48:23.568+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:48:23.568+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-2] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:48:27.094+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:48:27.094+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-4] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:48:27.608+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:48:27.609+05:00  INFO 35757 --- [aquilae] [http-nio-8081-exec-5] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:51:20.697+05:00  INFO 35757 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:51:21.955+05:00  INFO 36449 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 36449 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:51:21.956+05:00 DEBUG 36449 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:51:21.956+05:00  INFO 36449 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:51:22.314+05:00  INFO 36449 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:51:22.341+05:00  INFO 36449 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:51:22.566+05:00  INFO 36449 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:51:22.572+05:00  INFO 36449 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:51:22.572+05:00  INFO 36449 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:51:22.601+05:00  INFO 36449 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:51:22.601+05:00  INFO 36449 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2024-10-10T14:51:22.820+05:00  INFO 36449 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:51:22.841+05:00  INFO 36449 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:51:22.854+05:00  INFO 36449 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:51:22.989+05:00  INFO 36449 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:51:23.521+05:00  INFO 36449 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:51:23.572+05:00  INFO 36449 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:51:23.727+05:00  WARN 36449 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:51:23.727+05:00  WARN 36449 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:51:23.746+05:00  INFO 36449 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:51:23.769+05:00 DEBUG 36449 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:51:23.787+05:00  WARN 36449 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:51:23.806+05:00  INFO 36449 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:51:23.806+05:00  WARN 36449 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:51:23.848+05:00  INFO 36449 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:51:24.051+05:00  INFO 36449 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:51:24.055+05:00  INFO 36449 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.285 seconds (process running for 2.562)
+2024-10-10T14:51:35.056+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:51:35.057+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:51:35.057+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:51:35.084+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:51:40.562+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:51:40.599+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:51:42.468+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-9] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:51:42.468+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-9] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:51:49.186+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:51:49.186+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-10] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:51:49.469+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:51:49.470+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-1] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:51:50.124+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:51:50.124+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-2] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:51:53.623+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:51:53.623+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:51:53.662+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:51:53.663+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:51:53.663+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:51:53.665+05:00  INFO 36449 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:52:40.816+05:00  INFO 36449 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:52:42.088+05:00  INFO 36947 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 36947 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:52:42.089+05:00 DEBUG 36947 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:52:42.089+05:00  INFO 36947 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:52:42.415+05:00  INFO 36947 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:52:42.441+05:00  INFO 36947 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:52:42.663+05:00  INFO 36947 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:52:42.670+05:00  INFO 36947 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:52:42.670+05:00  INFO 36947 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:52:42.696+05:00  INFO 36947 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:52:42.697+05:00  INFO 36947 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2024-10-10T14:52:42.915+05:00  INFO 36947 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:52:42.939+05:00  INFO 36947 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:52:42.953+05:00  INFO 36947 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:52:43.069+05:00  INFO 36947 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:52:43.559+05:00  INFO 36947 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:52:43.607+05:00  INFO 36947 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:52:43.748+05:00  WARN 36947 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:52:43.748+05:00  WARN 36947 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:52:43.766+05:00  INFO 36947 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:52:43.791+05:00 DEBUG 36947 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:52:43.809+05:00  WARN 36947 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:52:43.827+05:00  INFO 36947 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:52:43.827+05:00  WARN 36947 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:52:43.866+05:00  INFO 36947 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:52:44.058+05:00  INFO 36947 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:52:44.062+05:00  INFO 36947 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.16 seconds (process running for 2.459)
+2024-10-10T14:52:47.195+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:52:47.195+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:52:47.196+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:52:47.213+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:52:47.310+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:52:47.921+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:52:47.921+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:52:48.312+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:52:48.312+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:52:49.734+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:52:49.735+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:52:50.601+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-9] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:52:50.602+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-9] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:52:52.396+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:52:52.396+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-10] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:52:53.035+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:52:53.035+05:00  INFO 36947 --- [aquilae] [http-nio-8081-exec-1] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:53:06.167+05:00  INFO 36947 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:53:07.608+05:00  INFO 37293 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 37293 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:53:07.609+05:00 DEBUG 37293 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:53:07.609+05:00  INFO 37293 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:53:07.925+05:00  INFO 37293 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:53:07.949+05:00  INFO 37293 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:53:08.180+05:00  INFO 37293 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:53:08.186+05:00  INFO 37293 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:53:08.186+05:00  INFO 37293 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:53:08.204+05:00  INFO 37293 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:53:08.204+05:00  INFO 37293 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 576 ms
+2024-10-10T14:53:08.440+05:00  INFO 37293 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:53:08.461+05:00  INFO 37293 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:53:08.473+05:00  INFO 37293 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:53:08.593+05:00  INFO 37293 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:53:09.079+05:00  INFO 37293 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:53:09.127+05:00  INFO 37293 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:53:09.275+05:00  WARN 37293 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:53:09.275+05:00  WARN 37293 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:53:09.291+05:00  INFO 37293 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:53:09.314+05:00 DEBUG 37293 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:53:09.332+05:00  WARN 37293 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:53:09.349+05:00  INFO 37293 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:53:09.349+05:00  WARN 37293 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:53:09.388+05:00  INFO 37293 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:53:09.577+05:00  INFO 37293 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:53:09.581+05:00  INFO 37293 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.152 seconds (process running for 2.432)
+2024-10-10T14:53:16.755+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:53:16.755+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:53:16.756+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:53:16.771+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:53:16.772+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-1] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:53:17.782+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:53:17.783+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-2] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:53:19.392+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:53:19.392+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-3] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:53:19.828+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:53:19.828+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-4] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:53:20.369+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:53:20.369+05:00  INFO 37293 --- [aquilae] [http-nio-8081-exec-5] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:54:19.840+05:00  INFO 37293 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:54:21.141+05:00  INFO 37709 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 37709 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:54:21.142+05:00 DEBUG 37709 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:54:21.142+05:00  INFO 37709 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:54:21.457+05:00  INFO 37709 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:54:21.481+05:00  INFO 37709 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:54:21.706+05:00  INFO 37709 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:54:21.713+05:00  INFO 37709 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:54:21.713+05:00  INFO 37709 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:54:21.734+05:00  INFO 37709 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:54:21.735+05:00  INFO 37709 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
+2024-10-10T14:54:21.969+05:00  INFO 37709 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:54:21.992+05:00  INFO 37709 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:54:22.006+05:00  INFO 37709 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:54:22.134+05:00  INFO 37709 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:54:22.673+05:00  INFO 37709 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:54:22.725+05:00  INFO 37709 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:54:22.854+05:00  WARN 37709 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:54:22.854+05:00  WARN 37709 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:54:22.869+05:00  INFO 37709 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:54:22.891+05:00 DEBUG 37709 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:54:22.917+05:00  WARN 37709 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:54:22.937+05:00  INFO 37709 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:54:22.938+05:00  WARN 37709 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:54:22.979+05:00  INFO 37709 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:54:23.170+05:00  INFO 37709 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:54:23.174+05:00  INFO 37709 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.212 seconds (process running for 2.491)
+2024-10-10T14:54:24.949+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:54:24.949+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:54:24.950+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:54:24.967+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:54:25.064+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:54:29.268+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:54:29.268+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:54:34.473+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:54:34.473+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:54:57.583+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:54:57.583+05:00  INFO 37709 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:15.698+05:00  INFO 37709 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:55:17.701+05:00  INFO 38139 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 38139 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:55:17.702+05:00 DEBUG 38139 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:55:17.703+05:00  INFO 38139 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:55:18.048+05:00  INFO 38139 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:55:18.073+05:00  INFO 38139 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:55:18.297+05:00  INFO 38139 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:55:18.304+05:00  INFO 38139 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:55:18.304+05:00  INFO 38139 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:55:18.324+05:00  INFO 38139 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:55:18.324+05:00  INFO 38139 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 601 ms
+2024-10-10T14:55:18.554+05:00  INFO 38139 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:55:18.575+05:00  INFO 38139 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:55:18.588+05:00  INFO 38139 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:55:18.701+05:00  INFO 38139 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:55:19.245+05:00  INFO 38139 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:55:19.294+05:00  INFO 38139 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:55:19.417+05:00  WARN 38139 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:55:19.417+05:00  WARN 38139 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:55:19.432+05:00  INFO 38139 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:55:19.452+05:00 DEBUG 38139 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:55:19.479+05:00  WARN 38139 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:55:19.499+05:00  INFO 38139 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:55:19.499+05:00  WARN 38139 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:55:19.541+05:00  INFO 38139 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:55:19.735+05:00  INFO 38139 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:55:19.739+05:00  INFO 38139 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.206 seconds (process running for 2.568)
+2024-10-10T14:55:43.333+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:55:43.333+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:55:43.334+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-10-10T14:55:43.351+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:55:43.440+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:55:44.495+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:44.496+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:45.842+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:45.842+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:47.292+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:47.293+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:48.108+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-9] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:48.108+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-9] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:48.856+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:48.856+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:50.451+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:55:50.451+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:50.485+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:50.487+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:55:50.487+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:50.489+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:51.362+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:55:51.362+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:51.398+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:51.399+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:55:51.399+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:51.401+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:52.518+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:55:52.518+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:52.550+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:52.551+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:55:52.551+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:52.554+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:52.888+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:55:52.889+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:52.915+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:52.916+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:55:52.916+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:52.920+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:53.704+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:55:53.704+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:53.734+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:53.736+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:55:53.736+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:55:53.738+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-4] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:55:57.026+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-6] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:57.026+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-6] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:55:59.837+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:55:59.837+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:56:00.771+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-8] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:56:00.772+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-8] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:56:12.694+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-9] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:56:12.695+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-9] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:56:24.295+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:56:24.296+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:56:24.326+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:56:24.327+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:56:24.327+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:56:24.330+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-10] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:56:31.562+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:56:31.563+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:56:31.592+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:56:31.593+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:56:31.593+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:56:31.595+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:56:32.455+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:56:32.455+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:56:32.472+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:56:32.473+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:56:32.473+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:56:32.474+05:00  INFO 38139 --- [aquilae] [http-nio-8081-exec-2] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:58:39.340+05:00  INFO 38139 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:58:40.569+05:00  INFO 38736 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 38736 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:58:40.570+05:00 DEBUG 38736 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:58:40.570+05:00  INFO 38736 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:58:40.899+05:00  INFO 38736 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:58:40.927+05:00  INFO 38736 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:58:41.157+05:00  INFO 38736 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:58:41.163+05:00  INFO 38736 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:58:41.163+05:00  INFO 38736 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:58:41.182+05:00  INFO 38736 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:58:41.182+05:00  INFO 38736 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2024-10-10T14:58:41.488+05:00  INFO 38736 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:58:41.518+05:00  INFO 38736 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:58:41.534+05:00  INFO 38736 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:58:41.660+05:00  INFO 38736 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:58:42.137+05:00  INFO 38736 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:58:42.188+05:00  INFO 38736 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:58:42.333+05:00  WARN 38736 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:58:42.333+05:00  WARN 38736 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:58:42.349+05:00  INFO 38736 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:58:42.373+05:00 DEBUG 38736 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:58:42.390+05:00  WARN 38736 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:58:42.407+05:00  INFO 38736 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:58:42.408+05:00  WARN 38736 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:58:42.447+05:00  INFO 38736 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:58:42.634+05:00  INFO 38736 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:58:42.638+05:00  INFO 38736 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.252 seconds (process running for 2.541)
+2024-10-10T14:58:49.268+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:58:49.268+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:58:49.269+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:58:49.284+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:58:49.374+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:58:49.374+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-5] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:58:49.482+05:00  INFO 38736 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:59:28.401+05:00  INFO 38736 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:59:29.730+05:00  INFO 39081 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Starting AquilaeApplication using Java 21.0.4 with PID 39081 (/home/jehaierys/IdeaProjects/aquilae/build/classes/java/main started by jehaierys in /home/jehaierys/IdeaProjects/aquilae)
+2024-10-10T14:59:29.731+05:00 DEBUG 39081 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-10T14:59:29.731+05:00  INFO 39081 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-10-10T14:59:30.054+05:00  INFO 39081 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-10T14:59:30.079+05:00  INFO 39081 --- [aquilae] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-10-10T14:59:30.294+05:00  INFO 39081 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-10-10T14:59:30.300+05:00  INFO 39081 --- [aquilae] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-10T14:59:30.301+05:00  INFO 39081 --- [aquilae] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-10T14:59:30.328+05:00  INFO 39081 --- [aquilae] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-10T14:59:30.328+05:00  INFO 39081 --- [aquilae] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 578 ms
+2024-10-10T14:59:30.557+05:00  INFO 39081 --- [aquilae] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-10T14:59:30.580+05:00  INFO 39081 --- [aquilae] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-10T14:59:30.593+05:00  INFO 39081 --- [aquilae] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-10T14:59:30.711+05:00  INFO 39081 --- [aquilae] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-10T14:59:31.206+05:00  INFO 39081 --- [aquilae] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-10T14:59:31.260+05:00  INFO 39081 --- [aquilae] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-10T14:59:31.397+05:00  WARN 39081 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:59:31.397+05:00  WARN 39081 --- [aquilae] [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2024-10-10T14:59:31.413+05:00  INFO 39081 --- [aquilae] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-10T14:59:31.438+05:00 DEBUG 39081 --- [aquilae] [main] c.example.aquilae.config.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2024-10-10T14:59:31.457+05:00  WARN 39081 --- [aquilae] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-10T14:59:31.475+05:00  INFO 39081 --- [aquilae] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-10-10T14:59:31.475+05:00  WARN 39081 --- [aquilae] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-10T14:59:31.513+05:00  INFO 39081 --- [aquilae] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-10T14:59:31.707+05:00  INFO 39081 --- [aquilae] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-10-10T14:59:31.711+05:00  INFO 39081 --- [aquilae] [main] com.example.aquilae.AquilaeApplication   : Started AquilaeApplication in 2.162 seconds (process running for 2.481)
+2024-10-10T14:59:48.762+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-10T14:59:48.762+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-10T14:59:48.763+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-10-10T14:59:48.780+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-1] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T14:59:48.866+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-5] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T14:59:48.866+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-5] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T14:59:48.972+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-6] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T14:59:50.973+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T14:59:50.973+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:59:51.008+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T14:59:51.009+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T14:59:51.009+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T14:59:51.012+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T15:01:14.083+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-10] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T15:01:14.084+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-10] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T15:02:17.064+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-2] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T15:02:17.065+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-2] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T15:02:24.508+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : users() method called
+2024-10-10T15:02:24.509+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T15:02:24.542+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T15:02:24.543+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] c.example.aquilae.user.AdminController   : 5 users found
+2024-10-10T15:02:24.543+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : users() method called
+2024-10-10T15:02:24.546+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.user.UserService     : na@gmail.com - is empty: false
+2024-10-10T15:02:42.314+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-4] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T15:02:42.314+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-4] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T15:02:48.301+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-5] com.example.aquilae.FrontGiver           : registration page  called
+2024-10-10T15:02:48.324+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T15:04:26.051+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-10] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T15:04:39.877+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-3] com.example.aquilae.FrontGiver           : admin panel called
+2024-10-10T15:04:39.919+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] c.example.aquilae.user.AdminController   : sneakers() method called
+2024-10-10T15:04:39.919+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-7] c.e.aquilae.sneakers.SneakersService     : getAllSneakers called
+2024-10-10T15:04:39.958+05:00  INFO 39081 --- [aquilae] [http-nio-8081-exec-8] com.example.aquilae.FrontGiver           : login page called
+2024-10-10T15:11:48.839+05:00  INFO 39081 --- [aquilae] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

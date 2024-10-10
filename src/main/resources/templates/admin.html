@@ -53,9 +53,24 @@
         footer {
             height: 20vh;
         }
+/*
+        .sneakers-id-column {
+            width: 30px;
+        }
+        .sneakers-model-column {
+            width: 300px;
+        }
+        .sneakers-size-column {
+            width: 150px;
+        }
+        .sneakers-quantity-column {
+            width: 100px;
+        }
+        */
+
     </style>
 </head>
-<body>
+<body onload="refresh('user'), refresh('sneakers')">
 <main>
 
     <h1>ADMIN PANEL</h1>
@@ -65,34 +80,19 @@
         <button onclick="refresh('sneakers')" aria-label="Refresh sneakers data">
             <img class="button-img" src="/icon/refresh.png" alt="Refresh">
         </button>
+        <button onclick="hideTable('sneakers')">
+            <img class="button-img" src="/icon/hide.png" alt="hide">
+        </button>
         <table id="sneakers">
             <thead>
             <tr>
-                <th>ID</th>
-                <th>Модель</th>
-                <th>Размер</th>
-                <th>Количество</th>
+                <th class="sneakers-id-column">ID</th>
+                <th class="sneakers-model-column">Модель</th>
+                <th class="sneakers-size-column">Размер</th>
+                <th class="sneakers-quantity-column">Количество</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>1</td>
-                <td>Nike Air Max</td>
-                <td>42</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Adidas Superstar</td>
-                <td>40</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Puma RS-X</td>
-                <td>44</td>
-                <td>8</td>
-            </tr>
             </tbody>
         </table>
     </article>
@@ -101,6 +101,9 @@
         <h2>Users</h2>
         <button onclick="refresh('users')" aria-label="Refresh user data">
             <img class="button-img" src="/icon/refresh.png" alt="Refresh">
+        </button>
+        <button onclick="hideTable('users')">
+            <img class="button-img" src="/icon/hide.png" alt="hide">
         </button>
         <table id="users">
             <thead>
@@ -116,86 +119,9 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>1</td>
-                <td>Иван</td>
-                <td>Иванов</td>
-                <td>ivan@example.com</td>
-                <td>+7 123 456-78-90</td>
-                <td>Да</td>
-                <td>Нет</td>
-                <td>USER</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Мария</td>
-                <td>Петрова</td>
-                <td>maria@example.com</td>
-                <td>+7 987 654-32-10</td>
-                <td>Да</td>
-                <td>Да</td>
-                <td>ADMIN</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Алексей</td>
-                <td>Сидоров</td>
-                <td>alexey@example.com</td>
-                <td>+7 111 222-33-44</td>
-                <td>Нет</td>
-                <td>Нет</td>
-                <td>USER</td>
-            </tr>
             </tbody>
         </table>
     </article>
-
-    <!--
-    <article class="table">
-        <h2>JWT</h2>
-        <button onclick="refresh('jwt')">
-            <img class="button-img" src="/icon/refresh.png" alt="Refresh">
-        </button>
-        <table id="jwt">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Токен</th>
-                <th>Тип токена</th>
-                <th>Отозван</th>
-                <th>Истек</th>
-                <th>Пользователь ID</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</td>
-                <td>BEARER</td>
-                <td>Нет</td>
-                <td>Да</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</td>
-                <td>BEARER</td>
-                <td>Да</td>
-                <td>Нет</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</td>
-                <td>BEARER</td>
-                <td>Нет</td>
-                <td>Нет</td>
-                <td>3</td>
-            </tr>
-            </tbody>
-        </table>
-    </article>
-    -->
 
 </main>
 
@@ -240,6 +166,7 @@
             case 'users':
                 for (let i = 0; i < userColumns.length; ++i) {
                     cell = document.createElement('td');
+                    //cell.addClass(`users-${userColumns[i]}-column`);
                     cell.innerText = record[userColumns[i]];
                     row.appendChild(cell);
                 }
@@ -247,6 +174,7 @@
             case 'sneakers':
                 for (let i = 0; i < sneakersColumns.length; ++i) {
                     cell = document.createElement('td');
+                    cell.setAttribute('class', `sneakers-${sneakersColumns[i]}-column`);
                     cell.innerText = record[sneakersColumns[i]];
                     row.appendChild(cell);
                 }
@@ -259,6 +187,16 @@
                 }
         }
     }
+
+    function hideTable(table) {
+        const tbody = document.getElementById(table).children[1];
+        if (tbody.children.length === 0) {
+            refresh(table); // Показываем таблицу
+        } else {
+            clearTableById(table); // Скрываем таблицу
+        }
+    }
+
 </script>
 
 </body>
