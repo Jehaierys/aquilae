@@ -15,7 +15,7 @@
     #logo {
       position: absolute;
       top: 3vh;
-      left: 17vh;
+      left: 10vw;
       width: 208px;
       text-align: center;
       font-size: 45px;
@@ -47,7 +47,7 @@
       border: 0;
     }
     #acc {
-      left: 80vw;
+      left: 70vw;
       top: -40px;
       position: absolute;
       border-radius: 23px;
@@ -70,13 +70,14 @@
     }
     ul {
       position: static;
-      margin-left: 14vw;
+      margin-left: 12vw;
       margin-top: 0;
       height: 5vh;
       list-style-type: none;
     }
     li {
       width: 10vw;
+      min-width: 140px;
       text-align: center;
       font-size: 30px;
       display: inline-block;
@@ -93,12 +94,15 @@
       top: 2vh;
       height: 5vh;
       width: 68vw;
+      min-width: 900px;
+      margin-top: 20px;
       border-bottom: 2px solid white;
     }
     #hello {
       width: 76%;
+      min-width: 700px;
       height: 660px;
-      margin-left: 10%;
+      margin-left: 10vw;
       margin-top: 6vh;
       font-family: "Sedan SC",serif;
       font-size: 50px;
@@ -153,26 +157,27 @@
     #collage {
       display: grid;
       justify-content: space-between;
-      grid-template-columns: 21vw 14vw 14vw 14vw;
+      grid-template-columns: 37% 21% 21% 21%;
       margin-top: 170px;
       margin-left: 18vw;
-      width: 60vw;
+      width: 64vw;
+      min-width: 810px;
       height: 450px;
       border-radius: 20px;
-    }
-    .collage-img {
-      object-fit: cover;
-      height: 450px;
-      width: 14vw;
-    }
-    #opened_photo {
-      height: 450px;
-      width: auto;
     }
     .collage-img-holder {
       background-color: white;
       display: inline-block;
       height: 450px;
+    }
+    #opened_photo {
+      height: 450px;
+      width: auto;
+    }
+    .collage-img {
+      object-fit: cover;
+      height: 450px;
+      width: 14vw;
     }
     #delivery {
       display: grid;
@@ -182,6 +187,7 @@
       margin-top: 150px;
       margin-left: 18vw;
       width: 64vw;
+      min-width: 810px;
       border: 5px solid white;
       border-radius: 20px;
     }
@@ -213,6 +219,7 @@
     #saleBanner {
       margin-left: 18vw;
       width: 64vw;
+      min-width: 810px;
       height: 700px;
       border-radius: 20px;
       background-color: white;
@@ -227,7 +234,7 @@
     article {
       width: 64vw;
       margin-left: 18vw;
-      margin-bottom: 200px;
+      margin-bottom: 50px;
     }
     .article-title {
       font-size: 38px;
@@ -237,6 +244,7 @@
       font-size: 20px;
     }
     .container {
+      min-width: 800px;
       margin-top: 80px;
       display: grid;
       grid-template-columns: repeat(4, 15vw);
@@ -279,6 +287,24 @@
     }
     .red-text {
       color: darkred;
+    }
+    .see-more-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1vh;
+      margin-bottom: 13vh;
+    }
+    .see-more-button {
+      border: 0;
+      width: 270px;
+      height: 60px;
+      font-family: "Sedan SC", serif;
+      font-size: 20px;
+      border-radius: 16px;
+      color: darkred;
+      text-align: center;
+      background-color: white;
     }
   </style>
 </head>
@@ -405,6 +431,102 @@
     </div>
   </div>
 </article>
+
+<div class="see-more-container"><button class="see-more-button">SEE MORE</button></div>
+
+<article>
+  <div class="article-title">Power Up Your Play with <span class="red-text">Women's</span>Sports Gear</div>
+  <div class="article-paragraph">
+    Revitalize your athletic journey with our premium women's sports<br>
+    gear. Designed for maximum performance and comfort, our<br>
+    collection blends style with functionality seamlessly. From<br>
+    high-intensity workouts to leisurely activities, our sportswear<br>
+    ensures you feel empowered and confident every step of the way.<br>
+  </div>
+
+  <div class="container">
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">WOMEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">WOMEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">WOMEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">WOMEN'S SNEAKERS</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+  </div>
+</article>
+
+<div class="see-more-container"><button class="see-more-button">SEE MORE</button></div>
+
+<article>
+  <div class="article-title">Dominate the Field in Performance <span class="red-text">Sports</span> Apparel</div>
+  <div class="article-paragraph">
+    Elevate your game with our high-performance sports clothes.<br>
+    Designed for athletes by athletes, our apparel blends style<br>
+    and functionality seamlessly. Experience unrivaled comfort<br>
+    and confidence as you dominate the competition in our<br>
+    premium sportswear.
+  </div>
+
+  <div class="container">
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">SPORT</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">SPORT</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">SPORT</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+
+    <div class="position">
+      <div class="photoHolder"></div>
+      <div class="type">SPORT</div>
+      <div class="model">WHITE IN BLUE</div>
+      <div class="cost">130.00$</div>
+      <button class="buy-position-button">BUY</button>
+    </div>
+  </div>
+</article>
+
+<div class="see-more-container"><button class="see-more-button">SEE MORE</button></div>
 
 <script>let containerHeight = '70px';
 document.addEventListener('scroll', makeSaleLent);
