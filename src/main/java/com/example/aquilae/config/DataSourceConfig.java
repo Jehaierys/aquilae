@@ -34,7 +34,7 @@ public class DataSourceConfig {
         settings.setSeparator(System.lineSeparator());
         settings.setMode(DatabaseInitializationMode.ALWAYS);
         settings.setDataLocations(List.of("classpath:data.sql"));
-        settings.setSchemaLocations(List.of("classpath:drop.sql", "classpath:schema.sql"));
+        settings.setSchemaLocations(List.of("classpath:schema.sql"));
         return settings;
     }
 }
