@@ -1,6 +1,5 @@
 package com.example.aquilae;
 
-import com.example.aquilae.user.AdminController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

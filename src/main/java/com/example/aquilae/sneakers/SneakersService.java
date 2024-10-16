@@ -3,11 +3,10 @@ package com.example.aquilae.sneakers;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
+
 
 @Service
 @RequiredArgsConstructor
@@ -24,7 +23,10 @@ public class SneakersService {
         logger.info("getAllSneakers called");
         return sneakersRepo.findAll();
     }
-    public boolean deleteSneakers(Long id) {
-        return sneakersRepo.getReferenceById(id).getModel() == null;
+    public void deleteSneakers(Long id) {
+        sneakersRepo.deleteById(id);
+    }
+    public void save(Sneakers sneakers) {
+        sneakersRepo.save(sneakers);
     }
 }

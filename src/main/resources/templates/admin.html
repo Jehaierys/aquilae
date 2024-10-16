@@ -87,9 +87,12 @@
             <thead>
             <tr>
                 <th class="sneakers-id-column">ID</th>
-                <th class="sneakers-model-column">Модель</th>
-                <th class="sneakers-size-column">Размер</th>
-                <th class="sneakers-quantity-column">Количество</th>
+                <th class="sneakers-model-column">Model</th>
+                <th class="sneakers-size-column">Size</th>
+                <th class="sneakers-quantity-column">Quantity</th>
+                <th>Remove</th>
+                <th>Disable</th>
+                <th>Edit</th>
             </tr>
             </thead>
             <tbody>
@@ -109,13 +112,15 @@
             <thead>
             <tr>
                 <th>ID</th>
-                <th>Имя</th>
-                <th>Фамилия</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
                 <th>Email</th>
-                <th>Номер телефона</th>
-                <th>Верификация Email</th>
-                <th>Верификация телефона</th>
-                <th>Роль</th>
+                <th>Phone number</th>
+                <th>Email verified</th>
+                <th>Phone verified</th>
+                <th>Role</th>
+                <th>Disable</th>
+                <th>Edit</th>
             </tr>
             </thead>
             <tbody>
@@ -166,7 +171,6 @@
             case 'users':
                 for (let i = 0; i < userColumns.length; ++i) {
                     cell = document.createElement('td');
-                    //cell.addClass(`users-${userColumns[i]}-column`);
                     cell.innerText = record[userColumns[i]];
                     row.appendChild(cell);
                 }
